@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class RemoveElement {
+
+    public static void main(String[] args) {
+        List<String> myList = new ArrayList<>();
+        myList.add("apple");
+        myList.add("banana");
+        myList.add("orange");
+        myList.add("grape");
+
+        System.out.println("Original List: " + myList);
+        String elementToRemove = "banana";
+        boolean removed = myList.remove(elementToRemove);
+
+        if (removed) {
+            System.out.println("Element '" + elementToRemove + "' removed.");
+        } else {
+            System.out.println("Element '" + elementToRemove + "' not found in the list.");
+        }
+        System.out.println("Updated List: " + myList);
+    }
+}
