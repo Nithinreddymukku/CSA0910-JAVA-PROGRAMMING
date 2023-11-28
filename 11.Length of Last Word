@@ -1,0 +1,21 @@
+public class LengthOfLastWord {
+
+    public static int lengthOfLastWord(String s) {
+        String trimmedString = s.trim();
+
+        int lastSpaceIndex = trimmedString.lastIndexOf(' ');
+
+        if (lastSpaceIndex == -1) {
+            return trimmedString.length();
+        }
+
+        return trimmedString.length() - lastSpaceIndex - 1;
+    }
+
+    public static void main(String[] args) {
+        String inputString = "Hello World";
+
+        int length = lengthOfLastWord(inputString);
+        System.out.println("Length of the last word: " + length);
+    }
+}
