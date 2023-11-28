@@ -1,0 +1,12 @@
+public class FindFirstOccurrence {
+    public static void main(String[] args) {
+        String mainString = "Myself Nithin From Chennai";
+        String substring = "Chennai";
+        int firstOccurrenceIndex = mainString.indexOf(substring);
+        if (firstOccurrenceIndex != -1) {
+            System.out.println("The first occurrence of '" + substring + "' starts at index: " + firstOccurrenceIndex);
+        } else {
+            System.out.println("'" + substring + "' not found in the string.");
+        }
+    }
+}
