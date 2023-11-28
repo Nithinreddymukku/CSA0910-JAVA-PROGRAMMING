@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class RemoveDuplicates {
+
+    public static List<Integer> removeDuplicates(List<Integer> inputList) {
+        Set<Integer> uniqueSet = new LinkedHashSet<>(inputList);
+        List<Integer> resultList = new ArrayList<>(uniqueSet);
+
+        return resultList;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> originalList = List.of(1, 2, 3, 2, 4, 5, 6, 4, 7);
+        
+        List<Integer> listWithoutDuplicates = removeDuplicates(originalList);
+
+        System.out.println("Original List: " + originalList);
+        System.out.println("List without Duplicates: " + listWithoutDuplicates);
+    }
+}
